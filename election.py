@@ -77,4 +77,3 @@ def simulate_elections():
 
 if __name__ == "__main__":
     simulate_elections()
-    run_election(candidate_weights)
