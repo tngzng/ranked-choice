@@ -2,8 +2,8 @@ from typing import List, Tuple
 import numpy as np
 
 from pyrankvote import Candidate, Ballot, instant_runoff_voting
-from pyrankvote.helpers import ElectionResults
-
+from pyrankvote.helpers import ElectionResults, CandidateStatus
+from progressbar import progressbar
 
 # source: https://www.nydailynews.com/news/politics/nyc-elections-2021/ny-nyc-mayoral-race-poll-latest-20210513-o6g7vjptdfgwzelttmin5t6qla-story.html
 candidate_weights = [
@@ -39,21 +39,40 @@ def run_election(candidate_weights: List[Tuple[str, float]]) -> ElectionResults:
     return instant_runoff_voting(candidates, ballots)
 
 
+def get_eliminated(results: ElectionResults, round_num: int) -> List[Candidate]:
+    _round = results.rounds[round_num]
+    eliminated_candidates = [
+        candidate_result.candidate
+        for candidate_result in _round.candidate_results
+        if candidate_result.status == CandidateStatus.Rejected
+    ]
+    return eliminated_candidates
+
+
 def simulate_elections():
-    NUM_SIMULATIONS = 100
+    NUM_SIMULATIONS = 10
     results = []
-    [results.append(run_election(candidate_weights)) for n in range(NUM_SIMULATIONS)]
+    [
+        results.append(run_election(candidate_weights))
+        for n in progressbar(range(NUM_SIMULATIONS))
+    ]
     rounds = np.array([len(r.rounds) for r in results])
-    winner = np.array([r.get_winners()[0].name for r in results])
+    winners = np.array([r.get_winners()[0].name for r in results])
     avg_rounds = np.median(rounds)
-    winners, frequencies = np.unique(winner, return_counts=True)
+    winners, w_freq = np.unique(winners, return_counts=True)
+
+    eliminated = np.array([get_eliminated(r, 0)[0].name for r in results])
+    eliminated, e_freq = np.unique(eliminated, return_counts=True)
 
     print("============ REPORT ============")
     print("---------- avg rounds ----------")
     print(avg_rounds)
     print("----------- winners ------------")
-    for winner, freq in zip(winners, frequencies):
-        print(f"{winner}: {freq}/{NUM_SIMULATIONS} wins")
+    for candidate, freq in zip(winners, w_freq):
+        print(f"{candidate}: {freq}/{NUM_SIMULATIONS} wins")
+    print("------- 1st round losses -------")
+    for candidate, freq in zip(eliminated, e_freq):
+        print(f"{candidate}: {freq}/{NUM_SIMULATIONS} 1st round losses")
 
 
 if __name__ == "__main__":
