@@ -9,7 +9,7 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-2. run election
+2. run election simulation
 ```
 python election.py
 ```
