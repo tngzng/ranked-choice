@@ -5,6 +5,7 @@ from pyrankvote import Candidate, Ballot, instant_runoff_voting
 from pyrankvote.helpers import ElectionResults
 
 
+# source: https://www.nydailynews.com/news/politics/nyc-elections-2021/ny-nyc-mayoral-race-poll-latest-20210513-o6g7vjptdfgwzelttmin5t6qla-story.html
 candidate_weights = [
     ("andrew yang", 0.21),
     ("eric adams", 0.17),
@@ -39,7 +40,7 @@ def run_election(candidate_weights: List[Tuple[str, float]]) -> ElectionResults:
 
 
 def simulate_elections():
-    NUM_SIMULATIONS = 10
+    NUM_SIMULATIONS = 100
     results = []
     [results.append(run_election(candidate_weights)) for n in range(NUM_SIMULATIONS)]
     rounds = np.array([len(r.rounds) for r in results])
