@@ -12,16 +12,16 @@ VOTERS = 1000
 # rank up to 5 candidates in order of preference
 # source: https://www1.nyc.gov/site/civicengagement/voting/ranked-choice-voting.page
 VOTES = 5
-# source: https://www.nydailynews.com/news/politics/nyc-elections-2021/ny-nyc-mayoral-race-poll-latest-20210513-o6g7vjptdfgwzelttmin5t6qla-story.html
+# source: https://emersonpolling.reportablenews.com/pr/garcia-surges-to-lead-in-nyc-mayor-race-while-adams-holds-his-base
 CANDIDATE_WEIGHTS = [
-    ("andrew yang", 0.21),
-    ("eric adams", 0.17),
+    ("kathryn garcia", 0.21),
+    ("eric adams", 0.2),
+    ("andrew yang", 0.16),
     ("scott stringer", 0.1),
-    ("maya wiley", 0.1),
-    ("kathryn garcia", 0.08),
-    ("shaun donovan", 0.06),
-    ("ray mcguire", 0.06),
-    ("dianne morales", 0.04),
+    ("maya wiley", 0.09),
+    ("dianne morales", 0.07),
+    ("shaun donovan", 0.05),
+    ("ray mcguire", 0.02),
 ]
 
 
