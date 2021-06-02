@@ -45,11 +45,15 @@ def get_eliminated(results: ElectionResults) -> List[Candidate]:
     get list of candidates eliminated in the round that corresponds with the
     number of choices each voter gets.
 
-    for example, if voters get to select five candidates, return the candidates who
+    for example, if voters get to select five candidates, return the candidates
+    who
     have been eliminated by the fifth round.
 
     this attempts to identify which ballots may lead to the following scenario:
-    "Say there are five candidates running, but the voter ranks only three, and all three are eliminated prior to the last round. As a result, none of their votes will have gone to the winning candidate or the runner-up. In effect, their ballot doesn’t figure in the outcome."
+    "Say there are five candidates running, but the voter ranks only three,
+    and all three are eliminated prior to the last round. As a result, none
+    of their votes will have gone to the winning candidate or the runner-up.
+    In effect, their ballot doesn’t figure in the outcome."
 
     source: https://democracyjournal.org/arguments/ranked-choice-voting-is-not-the-solution/
     """
