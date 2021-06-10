@@ -12,16 +12,16 @@ VOTERS = 1000
 # rank up to 5 candidates in order of preference
 # source: https://www1.nyc.gov/site/civicengagement/voting/ranked-choice-voting.page
 VOTES = 5
-# source: https://www.nydailynews.com/news/politics/nyc-elections-2021/ny-nyc-mayoral-race-poll-latest-20210513-o6g7vjptdfgwzelttmin5t6qla-story.html
+# source: https://emersonpolling.reportablenews.com/pr/garcia-surges-to-lead-in-nyc-mayor-race-while-adams-holds-his-base
 CANDIDATE_WEIGHTS = [
-    ("andrew yang", 0.21),
-    ("eric adams", 0.17),
+    ("kathryn garcia", 0.21),
+    ("eric adams", 0.2),
+    ("andrew yang", 0.16),
     ("scott stringer", 0.1),
-    ("maya wiley", 0.1),
-    ("kathryn garcia", 0.08),
-    ("shaun donovan", 0.06),
-    ("ray mcguire", 0.06),
-    ("dianne morales", 0.04),
+    ("maya wiley", 0.09),
+    ("dianne morales", 0.07),
+    ("shaun donovan", 0.05),
+    ("ray mcguire", 0.02),
 ]
 
 
@@ -45,11 +45,15 @@ def get_eliminated(results: ElectionResults) -> List[Candidate]:
     get list of candidates eliminated in the round that corresponds with the
     number of choices each voter gets.
 
-    for example, if voters get to select five candidates, return the candidates who
+    for example, if voters get to select five candidates, return the candidates
+    who
     have been eliminated by the fifth round.
 
     this attempts to identify which ballots may lead to the following scenario:
-    "Say there are five candidates running, but the voter ranks only three, and all three are eliminated prior to the last round. As a result, none of their votes will have gone to the winning candidate or the runner-up. In effect, their ballot doesn’t figure in the outcome."
+    "Say there are five candidates running, but the voter ranks only three,
+    and all three are eliminated prior to the last round. As a result, none
+    of their votes will have gone to the winning candidate or the runner-up.
+    In effect, their ballot doesn’t figure in the outcome."
 
     source: https://democracyjournal.org/arguments/ranked-choice-voting-is-not-the-solution/
     """
