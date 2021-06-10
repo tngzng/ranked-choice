@@ -1,18 +1,17 @@
 # ranked-choice
 
-## usage
-1. install dependencies
-```
-install python dependencies
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-2. run election simulation
-```
-python election.py
-```
+## takeaways
+Ranked choice voting allows progressive voters to voice support for progressive candidates, while also indicating a pragmatic choice between moderate candidates on the ballot.
+
+While it may be tempting for a progressive voter to list only one or two progressive candidates, this strategy can have the effect of not voting at all.
+
+Democracy Journal warns us about this [very scenario](https://democracyjournal.org/arguments/ranked-choice-voting-is-not-the-solution/):
+
+"Say there are five candidates running, but the voter ranks only three, and all three are eliminated prior to the last round. As a result, none of their votes will have gone to the winning candidate or the runner-up. In effect, their ballot doesn’t figure in the outcome."
+
+The results below shows a high likelihood that ranked choice ballot tabulations for NYC's competitive 2021 mayoral race will go through five or more rounds of elimination.
+
+**The bottom line:** even if progressive voters are only only enthusiastic about their top one or two ranked choice selections, progressive voters should make sure their ballot counts by voting for five candidates total (the maximum allowed).
 
 ## results
 With polling from [May 23, 2021](https://emersonpolling.reportablenews.com/pr/garcia-surges-to-lead-in-nyc-mayor-race-while-adams-holds-his-base):
@@ -52,4 +51,18 @@ ray mcguire: 100/100 times
 shaun donovan: 100/100 times
 maya wiley: 52/100 times
 scott stringer: 51/100 times
+```
+
+## usage
+1. install dependencies
+```
+install python dependencies
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+2. run election simulation
+```
+python election.py
 ```
