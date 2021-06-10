@@ -9,9 +9,9 @@ Democracy Journal warns us about this [very scenario](https://democracyjournal.o
 
 "Say there are five candidates running, but the voter ranks only three, and all three are eliminated prior to the last round. As a result, none of their votes will have gone to the winning candidate or the runner-up. In effect, their ballot doesn’t figure in the outcome."
 
-The results below shows a high likelihood that ranked choice ballot tabulations for NYC's competitive 2021 mayoral race will go through five or more rounds of elimination.
+Since the results below show a high likelihood that ranked choice ballot tabulations for NYC's competitive 2021 mayoral race will go through five or more rounds of elimination, many progressive ballots with fewer than five selections will be eliminated. 
 
-**The bottom line:** even if progressive voters are only only enthusiastic about their top one or two ranked choice selections, progressive voters should make sure their ballot counts by voting for five candidates total (the maximum allowed).
+**The bottom line:** progressive voters should make sure their ballots count by voting for five candidates total (the maximum allowed).
 
 ## results
 With polling from [May 23, 2021](https://emersonpolling.reportablenews.com/pr/garcia-surges-to-lead-in-nyc-mayor-race-while-adams-holds-his-base):
