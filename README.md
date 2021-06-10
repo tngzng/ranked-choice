@@ -1,4 +1,5 @@
 # ranked-choice
+This is a simple ranked choice election simulation meant to: 1) ballpark the number of elimination rounds in NYC's 2021 mayoral race, and 2) see which of the more popular candidates are likely to be eliminated before the final round of tabulations.
 
 ## takeaways
 While it may be tempting for progressive voters to list only one or two progressive candidates, this strategy can have the effect of not voting at all.
@@ -50,6 +51,15 @@ shaun donovan: 100/100 times
 maya wiley: 52/100 times
 scott stringer: 51/100 times
 ```
+
+## methodology 
+The approach to generate ballots for the election simulation is very simplistic. Each ballot selection is randomly chosen using recent polling stats to weight each subsequent selection:
+
+```
+ballot = np.random.choice(candidates, p=weights, replace=False, size=VOTES)
+```
+
+Since the goal is not to simulate an actual election with high fidelity, but to ballpark the number of ranked choice elimination rounds there might be, this simplistic approach should suffice.
 
 ## usage
 1. install dependencies
