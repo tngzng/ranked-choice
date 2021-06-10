@@ -11,7 +11,7 @@ Democracy Journal warns us about this [very scenario](https://democracyjournal.o
 
 The results below shows a high likelihood that ranked choice ballot tabulations for NYC's competitive 2021 mayoral race will go through five or more rounds of elimination.
 
-Even if progressive voters are only only enthusiastic about their top one or two ranked choice selections, progressive voters should make sure their ballot counts by voting for five candidates total (the maximum allowed).
+**The bottom line:** even if progressive voters are only only enthusiastic about their top one or two ranked choice selections, progressive voters should make sure their ballot counts by voting for five candidates total (the maximum allowed).
 
 ## results
 With polling from [May 23, 2021](https://emersonpolling.reportablenews.com/pr/garcia-surges-to-lead-in-nyc-mayor-race-while-adams-holds-his-base):
