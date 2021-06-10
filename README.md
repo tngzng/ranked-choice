@@ -1,7 +1,7 @@
 # ranked-choice
 
 ## takeaways
-While it may be tempting for a progressive voter to list only one or two progressive candidates, this strategy can have the effect of not voting at all.
+While it may be tempting for progressive voters to list only one or two progressive candidates, this strategy can have the effect of not voting at all.
 
 Democracy Journal warns us about this [very scenario](https://democracyjournal.org/arguments/ranked-choice-voting-is-not-the-solution/):
 
