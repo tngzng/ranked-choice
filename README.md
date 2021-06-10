@@ -1,19 +1,5 @@
 # ranked-choice
 
-## usage
-1. install dependencies
-```
-install python dependencies
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-2. run election simulation
-```
-python election.py
-```
-
 ## results
 With polling from [May 23, 2021](https://emersonpolling.reportablenews.com/pr/garcia-surges-to-lead-in-nyc-mayor-race-while-adams-holds-his-base):
 
@@ -52,4 +38,18 @@ ray mcguire: 100/100 times
 shaun donovan: 100/100 times
 maya wiley: 52/100 times
 scott stringer: 51/100 times
+```
+
+## usage
+1. install dependencies
+```
+install python dependencies
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+2. run election simulation
+```
+python election.py
 ```
