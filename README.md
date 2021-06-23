@@ -8,11 +8,31 @@ Democracy Journal warns us about this [very scenario](https://democracyjournal.o
 
 "Say there are five candidates running, but the voter ranks only three, and all three are eliminated prior to the last round. As a result, none of their votes will have gone to the winning candidate or the runner-up. In effect, their ballot doesn’t figure in the outcome."
 
-Since the results below show a high likelihood that ranked choice ballot tabulations for NYC's competitive 2021 mayoral race will go through five or more rounds of elimination, many progressive ballots with fewer than five selections may be eliminated. 
+Since the results below show a high likelihood that ranked choice ballot tabulations for NYC's competitive 2021 mayoral race will go through five or more rounds of elimination, many progressive ballots with fewer than five selections may be eliminated.
 
 **The bottom line:** progressive voters should make sure their ballots count by voting for five candidates total (the maximum allowed).
 
 ## results
+With polling from [June 21, 2021](http://maristpoll.marist.edu/wp-content/uploads/2021/06/20210612_WNBC_Telemundo-47_POLITICO_Marist-Poll_NYC-NOS-and-Tables_RCV_20210611256-3.pdf):
+
+```
+=================== REPORT ===================
+------------------ avg rounds ----------------
+candidate selected after 6.0 rounds on average
+--------------- num simulations --------------
+100
+------------------ num voters ----------------
+1000
+------------- eliminated by round 5 ----------
+andrew yang: 100/100 times
+dianne morales: 100/100 times
+ray mcguire: 100/100 times
+scott stringer: 100/100 times
+shaun donovan: 100/100 times
+maya wiley: 97/100 times
+kathryn garcia: 30/100 times
+```
+
 With polling from [May 23, 2021](https://emersonpolling.reportablenews.com/pr/garcia-surges-to-lead-in-nyc-mayor-race-while-adams-holds-his-base):
 
 ```
@@ -52,7 +72,7 @@ maya wiley: 52/100 times
 scott stringer: 51/100 times
 ```
 
-## methodology 
+## methodology
 The approach to generate ballots for the election simulation is very simplistic. Each ballot selection is randomly chosen using recent polling stats to weight each subsequent selection:
 
 ```
